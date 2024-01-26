@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,22 +23,28 @@
 
 <body>
     <main>
-        <h1>Sumas challenge</h1>
-        <div>
-            <select class="difficult">
-                <option value="10">Dificultad fácil</option>
-                <option value="50">Dificultad media</option>
-                <option value="100">Dificultad media alta</option>
-                <option value="1000">Dificultad alta</option>
-            </select>
-        </div>
-        <div class="container">
-            <p class="firstNumber"></p>
-            <p>+</p>
-            <p class="secondNumber"></p>
-            <input type="number" class="result">
-        </div>
-        <p class="totalRight">Acertaste: 0</p>
+        <h1>Sumas<span>Challenge</span></h1>
+        <section class="main-game">
+            <div class="difficult-container">
+                <label for="difficult">Seleccionar dificultad</label>
+                <select class="difficult" id="difficult">
+                    <option value="10">Dificultad fácil</option>
+                    <option value="50">Dificultad media</option>
+                    <option value="100">Dificultad media alta</option>
+                    <option value="1000">Dificultad alta</option>
+                </select>
+            </div>
+            <div class="container">
+                <p class="firstNumber"></p>
+                <p>+</p>
+                <p class="secondNumber"></p>
+                <p>=</p>
+                <input type="number" class="result" placeholder="Resultado">
+            </div>
+            <button>Saltar cálculo (próximamente)</button>
+            <p>Tiempo restante: próximamente</p>
+            <p class="totalRight">Acertaste: 0</p>
+        </section>
     </main>
     <script src="app.js"></script>
 </body>
