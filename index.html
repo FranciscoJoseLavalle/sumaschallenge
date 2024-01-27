@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Sumas Challenge</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/plus.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <!-- Google tag (gtag.js) -->
@@ -22,16 +23,18 @@
 </script>
 
 <body>
-    <main>
+    <header>
         <h1>Sumas<span>Challenge</span></h1>
+    </header>
+    <main>
         <section class="main-game">
             <div class="difficult-container">
                 <label for="difficult">Seleccionar dificultad</label>
                 <select class="difficult" id="difficult">
-                    <option value="10">Dificultad fácil</option>
-                    <option value="50">Dificultad media</option>
-                    <option value="100">Dificultad media alta</option>
-                    <option value="1000">Dificultad alta</option>
+                    <option value="10">Fácil</option>
+                    <option value="50">Media</option>
+                    <option value="100">Media alta</option>
+                    <option value="1000">Alta</option>
                 </select>
             </div>
             <div class="container">
@@ -41,11 +44,14 @@
                 <p>=</p>
                 <input type="number" class="result" placeholder="Resultado">
             </div>
-            <button>Saltar cálculo (próximamente)</button>
+            <button class="skip">Saltar cálculo</button>
             <p>Tiempo restante: próximamente</p>
             <p class="totalRight">Acertaste: 0</p>
         </section>
     </main>
+    <div class="correctMessage">
+        <p>¡Correcto!</p>
+    </div>
     <script src="app.js"></script>
 </body>
 
