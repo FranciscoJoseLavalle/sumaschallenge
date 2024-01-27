@@ -23,7 +23,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100dvh;
 }
 
@@ -53,8 +53,6 @@ h1 span {
     flex-direction: column;
     gap: .25rem;
 }
-
-#difficult {}
 
 .container {
     display: flex;
@@ -91,7 +89,7 @@ button:hover {
 .correctMessage {
     display: none;
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     /* background-color: #5c5; */
@@ -116,20 +114,20 @@ button:hover {
 
 @keyframes correctMessage {
     0% {
-        bottom: -7rem;
+        top: -7rem;
     }
 
     100% {
-        bottom: 0rem;
+        top: 0rem;
     }
 }
 
 @keyframes hideCorrectMessage {
     0% {
-        bottom: 0rem;
+        top: 0rem;
     }
 
     100% {
-        bottom: -7rem;
+        top: -7rem;
     }
 }
